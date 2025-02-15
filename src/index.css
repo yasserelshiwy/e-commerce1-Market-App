@@ -1,0 +1,83 @@
+html{
+  scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+  
+}
+body {
+    margin: 0;
+}
+.myButton {
+  border-radius: 5px !important;
+  border: 1px solid #888 !important;
+
+  text-transform: capitalize !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  margin-inline: 10px !important;
+  font-size: 16px !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+
+  font-size: 18px;
+  background: #fff;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #006effcc;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active-Link-light ,.active-Link-dark{
+  font-weight: 600;
+  position: relative;
+}
+.active-Link-light::before{
+  content: "";
+  width: 100%;
+  height: 2px;
+position: absolute;
+background-color: white;
+bottom: -3px;
+}
+.active-Link-dark::before{
+  content: "";
+  width: 100%;
+  height: 2px;
+position: absolute;
+background-color: black;
+bottom: -3px;
+}
