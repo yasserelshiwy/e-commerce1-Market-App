@@ -273,7 +273,7 @@ export default function Header2() {
           alignItems={"center"}
           sx={{ py: 1, borderBottom: 1 }}
         >
-          <Typography sx={{ fontSize: "18px", fontWeight: "600" }}>
+          <Typography sx={{ fontSize: "18px", fontWeight: "600", ml: 1 }}>
             cart Items
           </Typography>
 
@@ -470,7 +470,7 @@ export default function Header2() {
                 direction={"row"}
                 alignItems={"center"}
                 justifyContent={"space-between"}
-                sx={{ py: 2, mb: 2 }}
+                sx={{ py: 2, mb: 2, paddingBlock: "12px" }}
                 borderTop={1}
                 borderBottom={1}
               >
@@ -500,12 +500,14 @@ export default function Header2() {
                 style={{
                   color: theme.palette.text.primary,
                   paddingBlock: "20px",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
                 <Button
                   variant="contained"
                   color="inherit"
-                  sx={{ width: "100%", textTransform: "capitalize" }}
+                  sx={{ width: "95%", textTransform: "capitalize" }}
                 >
                   view cart
                 </Button>
