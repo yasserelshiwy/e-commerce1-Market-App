@@ -470,7 +470,7 @@ export default function Header2() {
                 direction={"row"}
                 alignItems={"center"}
                 justifyContent={"space-between"}
-                sx={{ py: 2, mb: 2, paddingBlock: "12px" }}
+                sx={{ py: 2, mb: 2, paddingInline: "12px" }}
                 borderTop={1}
                 borderBottom={1}
               >
@@ -499,7 +499,9 @@ export default function Header2() {
                 to={"/cart"}
                 style={{
                   color: theme.palette.text.primary,
-                  paddingBlock: "20px",
+                  paddingBlock: "15px",
+                  textTransform: "none",
+                  fontWeight: "600",
                   display: "flex",
                   justifyContent: "center",
                 }}
