@@ -83,7 +83,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const options = [
-  "All Categories",
+  "Categories",
   "Men's clothing",
   "Women's clothing",
   "Jewelery",
@@ -230,7 +230,7 @@ export default function Header2() {
           >
             {options.map((option, index) => (
               <MenuItem
-                sx={{ fontSize: "13px" }}
+                sx={{ fontSize: { xs: "10px", md: "13px" } }}
                 key={option}
                 selected={index === selectedIndex}
                 onClick={(event) => handleMenuItemClick(event, index)}
@@ -263,8 +263,7 @@ export default function Header2() {
         sx={{
           ".MuiPaper-root": {
             backgroundColor: theme.palette.mode === "light" ? "white" : "black",
-            minWidth: "400px",
-            px: 2,
+            minWidth: "350px",
           },
         }}
       >
@@ -321,7 +320,7 @@ export default function Header2() {
             </>
           ) : (
             <>
-              <Stack gap={2} p={2} sx={{ height: "80vh", overflow: "auto" }}>
+              <Stack gap={2} p={2} sx={{ height: "72vh", overflow: "auto" }}>
                 {cart.map((items) => {
                   return (
                     <>
