@@ -320,7 +320,7 @@ export default function Header2() {
             </>
           ) : (
             <>
-              <Stack gap={2} p={2} sx={{ height: "72vh", overflow: "auto" }}>
+              <Stack gap={2} p={2} sx={{ height: "70vh", overflow: "auto" }}>
                 {cart.map((items) => {
                   return (
                     <>
@@ -500,7 +500,7 @@ export default function Header2() {
                 style={{
                   color: theme.palette.text.primary,
                   paddingBlock: "15px",
-                  textTransform: "none",
+                  textDecoration: "none",
                   fontWeight: "600",
                   display: "flex",
                   justifyContent: "center",

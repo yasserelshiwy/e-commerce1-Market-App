@@ -11,12 +11,16 @@ export default function Footer() {
       }}
     >
       <Typography
-        justifyContent={"center"}
-        display={"flex"}
-        alignItems={"center"}
         color={"HighlightText"}
         variant="h6"
-        sx={{ fontSize: { xs: "11px", md: "18px" } }}
+        sx={{
+          fontSize: { xs: "11px", md: "18px" },
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+
+          flexDirection: { xs: "column", md: "row" },
+        }}
       >
         Designed and developed by
         <Button
